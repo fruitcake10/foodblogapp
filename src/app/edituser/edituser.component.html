@@ -1,0 +1,50 @@
+<div class="container">
+    <h1>Update Post</h1>
+    <div class="col-md-6">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <!-- <div class="form-group">
+                <label>ID</label>
+                <input type="text" class="form-control" formControlName="id"
+                [ngClass]="{'is-invalid':submitted && form['id'].errors}" [(ngModel)]="food.id">
+ 
+                <div *ngIf="submitted && form['id'].errors" class="invalid-feedback">
+                 ID cannot be empty
+                </div> -->
+            <!-- </div> -->
+            <div class="form-group">
+             <label>Name</label>
+             <input type="text" class="form-control" formControlName="name"
+             [ngClass]="{'is-invalid':submitted && form['name'].errors}"
+             [(ngModel)]="user.name">
+ 
+                <div *ngIf="submitted && form['name'].errors" class="invalid-feedback">
+                 Name cannot be empty
+                </div>
+         </div>
+         <div class="form-group">
+             <label>Cook Time</label>
+             <input type="text" class="form-control" formControlName="cookTime"
+             [ngClass]="{'is-invalid':submitted && form['cookTime'].errors}"
+             [(ngModel)]="user.cookTime">
+ 
+                <div *ngIf="submitted && form['cookTime'].errors" class="invalid-feedback">
+                 Email cannot be empty
+                </div>
+         </div>
+         <div class="form-group">
+             <label>Recipe</label>
+             <input type="text" class="form-control" formControlName="recipe"
+             [ngClass]="{'is-invalid':submitted && form['recipe'].errors}"
+             [(ngModel)]="user.recipe">
+ 
+                <div *ngIf="submitted && form['recipe'].errors" class="invalid-feedback">
+                 Recipe cannot be empty
+                </div>
+         </div><br>
+         <button class="btn btn-primary">Update Post</button>
+        </form>
+    </div>
+    </div>
+
+
+

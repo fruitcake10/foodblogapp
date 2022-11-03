@@ -1,0 +1,24 @@
+header{
+    background-color: white;
+    padding: 0;
+    border-bottom: 0.5px solid chocolate;
+}
+a{
+    color:#af1313;
+    font-size: xx-large;
+    text-decoration:none
+}
+
+a:hover{
+    background-color:#af1313;
+    color: white;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+a.logo{
+    font-weight: bold;
+    padding: 0.5em;
+}
